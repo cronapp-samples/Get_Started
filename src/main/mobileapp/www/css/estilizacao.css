@@ -1,0 +1,22 @@
+/* COR DO MENU */
+.navbar-default {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* ===================================== */
+
+/* ============================ GRID ================================== */
+
+/* COR DO CABEÇALHO DA GRID */
+.k-grid-header .k-header {
+    background-color: var(--primary-color);
+}
+/* ===================================== */
+
+/* COR DE FUNDO DO NÚMERO DA PÁGINA NA PÁGINAÇÃO DA GRID */
+.k-pager-wrap .k-state-selected:hover, .k-pager-wrap .k-state-selected, .k-pager-wrap .k-state-selected{
+    background-color: var(--secondary-color);
+}
+
+

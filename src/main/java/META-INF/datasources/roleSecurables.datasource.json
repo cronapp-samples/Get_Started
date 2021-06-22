@@ -1,0 +1,105 @@
+{
+  "customId": "roleSecurables",
+  "queryName": "Obter Autorizações do Papel",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "RoleSecurable",
+  "entityFullName": "app.entity.RoleSecurable",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "RoleSecurable",
+        "namespace": "app.entity.RoleSecurable",
+        "alias": "r"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "r.securable",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "r.role.normalizedName",
+          "field": "r.role.normalizedName",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":role",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "role",
+      "fieldValue": ""
+    }
+  ],
+  "verbs": {
+    "GET": false,
+    "GETAuthorities": null,
+    "POST": false,
+    "POSTAuthorities": null,
+    "PUT": false,
+    "PUTAuthorities": null,
+    "DELETE": false,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onGetData": null
+  },
+  "defaultValues": {
+    "id": null,
+    "role": null,
+    "securable": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "role": null,
+    "securable": null
+  },
+  "security": {
+    "id": null,
+    "role": null,
+    "securable": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/roleSecurables/"
+}

@@ -1,0 +1,53 @@
+/* COR DO MENU */
+.navbar-default {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: var(--third-color);
+} 
+
+/* ===================================== */
+
+/* ============================ GRID ================================== */
+
+/* COR DO CABEÇALHO DA GRID */
+.k-grid-header .k-header {
+    background-color: var(--primary-color);
+}
+/* ===================================== */
+
+/* COR DE FUNDO DO NÚMERO DA PÁGINA NA PÁGINAÇÃO DA GRID */
+.k-pager-wrap .k-state-selected:hover, .k-pager-wrap .k-state-selected, .k-pager-wrap .k-state-selected{
+    background-color: var(--secondary-color);
+}
+
+/* BOTÃO REFRESH DA GRID */
+.k-pager-wrap a.k-pager-refresh {
+    color: var(--secondary-color);
+}
+
+.k-pager-wrap a.k-pager-refresh:hover {
+    background-color: var(--secondary-color);
+}
+
+/* BOTÃO ADICIONAR */
+.k-grid-toolbar .k-button {
+    color: var(--secondary-color);
+}
+
+.k-grid-toolbar .k-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ======================================= */
+/*========== FORM ==============*/
+.btn-success {
+    background: var(--success-color)
+}
+
+.btn-danger {
+    background: var(--fail-color);
+}
+

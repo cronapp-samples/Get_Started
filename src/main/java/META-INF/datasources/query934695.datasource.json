@@ -1,0 +1,164 @@
+{
+  "customId": "query934695",
+  "queryName": "ReservasAlunoLogado",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Reserva",
+  "entityFullName": "app.entity.Reserva",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Reserva",
+        "namespace": "app.entity.Reserva",
+        "alias": "r"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "r",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "r.user.id",
+          "field": "r.user.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":userId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "userId",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "IdDoUsuarioLogado",
+        "blocklyClass": "blockly.FuncoesUsuario",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.FuncoesUsuario",
+          "sourcePath": "src/main/java/blockly/FuncoesUsuario.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "LoginDoUsuario",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "IdDoUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "user": {
+      "type": "server",
+      "blocklyMethod": "IdDoUsuarioLogado",
+      "blocklyClass": "blockly.FuncoesUsuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.FuncoesUsuario",
+        "sourcePath": "src/main/java/blockly/FuncoesUsuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "LoginDoUsuario",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "IdDoUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "livro": null,
+    "datareserva": null,
+    "dataemprestimo": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "user": null,
+    "livro": null,
+    "datareserva": null,
+    "dataemprestimo": null
+  },
+  "security": {
+    "id": null,
+    "user": null,
+    "livro": null,
+    "datareserva": null,
+    "dataemprestimo": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query934695/",
+  "audit": false
+}

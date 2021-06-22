@@ -1,0 +1,170 @@
+{
+  "customId": "roleManager",
+  "queryName": "Gerenciador de Papéis",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Role",
+  "entityFullName": "app.entity.Role",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "Role",
+        "alias": "r",
+        "namespace": "app.entity.Role"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "r"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "type": "server",
+      "blocklyMethod": "BeforeInsert",
+      "blocklyClass": "blockly.RoleManager",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.Role\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.RoleManager",
+        "sourcePath": "src/main/java/blockly/RoleManager.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "BeforeInsert",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeUpdate",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "name": "Normalize",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": {
+      "type": "server",
+      "blocklyMethod": "BeforeUpdate",
+      "blocklyClass": "blockly.RoleManager",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "Entidade\u0026lt;app.entity.Role\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.RoleManager",
+        "sourcePath": "src/main/java/blockly/RoleManager.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "BeforeInsert",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "name": "BeforeUpdate",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          },
+          {
+            "name": "Normalize",
+            "hasReturn": "true",
+            "params": [
+              "Entidade\u0026lt;app.entity.Role\u0026gt;"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onGetData": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "builtIn": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "builtIn": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "security": {
+    "id": null,
+    "builtIn": null,
+    "membershipEnabled": null,
+    "name": null,
+    "normalizedName": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/roleManager/",
+  "audit": false
+}
