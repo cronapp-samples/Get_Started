@@ -14,8 +14,8 @@
 
 /* BOTÃO LOGIN */
 .login-view .btn-primary {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--fourth-color);
+    border-color: var(--fourth-color);
     border-radius: 8px;
 }
 /* ===================== MENU =================== */
