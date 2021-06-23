@@ -1,14 +1,44 @@
-/* COR DO MENU */
+/*=========== TELA DE LOGIN============= */
+
+/* COR FUNDO LOGIN */
+.bg {
+    background: var(--primary-color);
+    width: 100%;
+    height: 100%;
+}
+
+/* CARD LOGIN */
+.login-view {
+    border-radius: 15px;
+}
+
+/* BOTÃO LOGIN */
+.login-view .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 8px;
+}
+/* ===================== MENU =================== */
+
+/* COR DE FUNDO MENU */
 .navbar-default {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
 
+/* COR DE FUNDO MENU COM FOCO */
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
     background-color: var(--third-color);
 } 
 
-/* ===================================== */
+/* COR DE FONTE MENU COM HOVER */
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--third-color);
+}
+
+/* ============================================================ */
 
 /* ============================ GRID ================================== */
 
@@ -41,13 +71,25 @@
     background-color: var(--secondary-color);
 }
 
-/* ======================================= */
-/*========== FORM ==============*/
+/* OPÇÕES EDITAR E EXCLUIR */
+.k-grid tbody .k-button:hover, .k-grid tbody .k-button:focus {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+/* ========================================================================== */
+
+/*=================== FORM ====================*/
 .btn-success {
     background: var(--success-color)
 }
 
 .btn-danger {
     background: var(--fail-color);
+}
+
+/* FOCO DAS ENTRADAS DE TEXTO */
+.k-input.k-textbox.k-state-focus, .k-input.k-textbox:focus, .k-textarea.k-state-focus, .k-textarea:focus, .k-textbox.k-state-focus, .k-textbox:focus {
+    border-color: var(--third-color);
 }
 

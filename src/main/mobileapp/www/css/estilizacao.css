@@ -1,22 +1,33 @@
-/* COR DO MENU */
-.navbar-default {
+/* MENU LATERAL */
+.menu-view {
     background-color: var(--primary-color);
+}
+
+/* ===================================== */
+
+/* MENU SUPERIOR */
+.bar.bar-positive {
     border-color: var(--primary-color);
-}
-
-/* ===================================== */
-
-/* ============================ GRID ================================== */
-
-/* COR DO CABEÇALHO DA GRID */
-.k-grid-header .k-header {
     background-color: var(--primary-color);
+    background-image: linear-gradient(0deg, var(--primary-color), var(--primary-color) 50%, transparent 50%);
 }
-/* ===================================== */
 
-/* COR DE FUNDO DO NÚMERO DA PÁGINA NA PÁGINAÇÃO DA GRID */
-.k-pager-wrap .k-state-selected:hover, .k-pager-wrap .k-state-selected, .k-pager-wrap .k-state-selected{
+/* BOTÃO PADRÃO */
+.button.button-positive {
     background-color: var(--secondary-color);
+}
+
+/* LOGIN */
+
+.login-bg {
+    background: var(--primary-color);
+}
+
+/* BOTÃOP LOGIN */
+.menu-view .button.button-positive, .login-bg .button.button-positive {
+    border-color: transparent;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 
